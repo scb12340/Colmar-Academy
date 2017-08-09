@@ -5,13 +5,11 @@ html {
 header div.desktop {
   background-color: white;
   display: flex;
-  border-bottom: 1px solid gray;
   width: 100%;
   height: 2rem;
   padding: 1rem 1.5rem;
   align-items: center;
 }
-
 header div.desktop span {
   display: flex;
   font-size: .75rem;
@@ -35,7 +33,6 @@ header div.mobile {
     display: block;
     background-color: white;
     display: flex;
-    border-bottom: 1px solid gray;
     width: 100%;
     height: 2rem;
     padding: 1rem 0;
@@ -45,4 +42,37 @@ header div.mobile {
   header div.desktop {
     display: none;
   }
+}
+div.banner {
+  display: flex;
+  flex-direction: row;
+  background-color: lightgray;
+  width: 100%;
+  align-items: center;
+}
+div.banner div#study {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+div.banner div#study img {
+ background-repeat: no-repeat;
+ width: 100%;
+}
+div.banner div#text {
+  display: block;
+}
+div#text h1{
+  font-weight: bold;
+  color: dimgray;
+  font-size: 3rem;
+}
+div#text h2 {
+  color: dimgray;
+  font-size: 1rem;
+}
+div.banner button {
+  background-color: dimgray;
+}
+div.banner button h3 {
+  padding: 0.5rem 0;
 }

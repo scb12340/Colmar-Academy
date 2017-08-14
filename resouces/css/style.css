@@ -82,3 +82,52 @@ div.banner button h3 {
   font-size: 1.5rem;
   font-weight: lighter;
 }
+div.articles {
+  display: flex;
+  flex-direction: row;
+}
+div.articles div.poster {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+div.articles div.school div#a3 img {
+  width: 75%;
+  height: 80%;
+}
+div.articles div.school img {
+  width: 35%;
+  padding: 1rem;
+  height: 35%;
+}
+div.articles div.poster img{
+  width: 100%;
+}
+div.articles div.poster p {
+  color: gray;
+  font-size: 1.2rem;
+}
+.articles div.school {
+  border-left: 1px solid gray;
+  width: 40%;
+  padding: 1rem 0;
+}
+.articles div.school div {
+display: flex;
+flex-direction: row;
+}
+.articles div.school div#content {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+.articles div.school a {
+  color: blue;
+}
+.articles div.school p {
+  font-size: 1.2rem;
+  color: gray;
+  font-weight: lighter;
+}
+.articles div.school div#a3:last-child {
+  background-color: pink;
+}

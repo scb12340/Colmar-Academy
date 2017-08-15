@@ -179,10 +179,12 @@ div.learning div#subjects h3 {
   padding-left: 1rem;
   padding-top: .5rem;
 }
-div.learning div.stuff img {
+div.items div.stuff div:first-child{
+  background-color: pink;
+}
+div.learning img {
   height: auto;
-  width: 35%;
-  margin: 1rem;
+  width: 100%;
 }
 div.last div.stuff {
   width: 40%;
@@ -191,19 +193,57 @@ div.last div.stuff div {
   display: flex;
   flex-direction: row;
 }
+div.last div.stuff img{
+  width: 35%;
+  padding: 1rem;
+  height: 35%;
+}
+div.last div.stuff h3 {
+  font-size: 1.7rem;
+}
+div.last div.stuff h5 {
+  color: gray;
+  font-size: 1rem;
+  font-weight: lighter;
+}
 div.last div.stuff div#content{
   display: block;
   width: 65%;
 }
 div.last h2{
   text-align: center;
+  padding: 2rem 0;
+  font-size: 2.5rem;
 }
 .last div#video{
   width: 60%;
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
   text-align: left;
-  border: 1px solid pink;
+}
+div.last p{
+  padding-bottom: 2rem;
+  color: gray;
+}
+div.last h3 {
+  padding-bottom: 0.5rem;
 }
 .last div#video video{
   width: 100%;
+}
+footer {
+  border-top: 1px solid gray;
+  width: 100%;
+}
+footer .right {
+  float: right;
+  padding-left: 1.5rem;
+}
+footer .left {
+  float: left;
+}
+footer div {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: gray;
+  font-size: 0.9rem;
 }

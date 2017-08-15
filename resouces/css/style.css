@@ -131,3 +131,79 @@ flex-direction: row;
 .articles div.school div#a3:last-child {
   background-color: pink;
 }
+div.learning {
+  background-color: gray;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+div.learning div#subjects {
+  padding: 2rem 4.5rem;
+}
+div.learning div#row1{
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+div.learning div#row1 div{
+  background-color: white;
+  text-align: left;
+  border: 1px solid pink;
+  margin-right: 2rem;
+  width: 33%;
+}
+div.learning div#row2{
+display: flex;
+flex-direction: row;
+}
+div.learning div#row2 div {
+  background-color: white;
+  text-align: left;
+  margin-right: 2rem;
+  width: 33%;
+  height: auto;
+}
+div.learning div#subjects h2 {
+  font-size: 1.7rem;
+  padding-left: 1rem;
+}
+div.items{
+  display: flex;
+  flex-direction: row;
+}
+div.learning div#subjects h3 {
+  color: dimgray;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  padding-top: .5rem;
+}
+div.learning div.stuff img {
+  height: auto;
+  width: 35%;
+  margin: 1rem;
+}
+div.last div.stuff {
+  width: 40%;
+}
+div.last div.stuff div {
+  display: flex;
+  flex-direction: row;
+}
+div.last div.stuff div#content{
+  display: block;
+  width: 65%;
+}
+div.last h2{
+  text-align: center;
+}
+.last div#video{
+  width: 60%;
+  padding: 0 1.5rem;
+  text-align: left;
+  border: 1px solid pink;
+}
+.last div#video video{
+  width: 100%;
+}

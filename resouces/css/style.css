@@ -82,6 +82,34 @@ div.banner button h3 {
   font-size: 1.5rem;
   font-weight: lighter;
 }
+@media only screen and (max-width:480px){
+  div.banner div#study {
+    width:100%;
+    padding: 0;
+  }
+  div.banner {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  div#text h1{
+    padding: 2rem 1rem;
+    font-size:3rem;
+    width: 100%;
+  }
+  div#text h2 {
+    padding-bottom: 1.5rem;
+    width: 100%;
+    padding-left: 1rem;
+  }
+  div.banner button {
+    margin: 0 0 2rem 1rem;
+    width: 90%;
+  }
+  div.banner button h3{
+      padding: 0.25rem 0;
+  }
+}
 div.articles {
   display: flex;
   flex-direction: row;

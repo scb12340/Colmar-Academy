@@ -28,7 +28,7 @@ span h1:last-child {
 header div.mobile {
   display: none;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 700px) {
   header div.mobile {
     display: block;
     background-color: white;
@@ -82,7 +82,7 @@ div.banner button h3 {
   font-size: 1.5rem;
   font-weight: lighter;
 }
-@media only screen and (max-width:480px){
+@media only screen and (max-width:700px){
   div.banner div#study {
     width:100%;
     padding: 0;
@@ -159,6 +159,27 @@ flex-direction: row;
 .articles div.school div#a3:last-child {
   background-color: pink;
 }
+@media only screen and (max-width: 700px){
+  div.articles .poster{
+    display:none;
+  }
+  div.articles div.school{
+    width: 100%;
+    padding: 1rem;
+  }
+  div.articles div.school div{
+    display: block;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .articles div.school div#content {
+    width: 100%;
+  }
+  div.articles div.school img#image {
+    width: 100%;
+    height: 50%;
+  }
+}
 div.learning {
   background-color: gray;
   text-align: center;
@@ -177,9 +198,9 @@ div.learning div#row1{
 div.learning div#row1 div{
   background-color: white;
   text-align: left;
-  border: 1px solid pink;
   margin-right: 2rem;
   width: 33%;
+  flex-shrink: 2
 }
 div.learning div#row2{
 display: flex;
@@ -191,10 +212,40 @@ div.learning div#row2 div {
   margin-right: 2rem;
   width: 33%;
   height: auto;
+  flex-shrink: 2
 }
 div.learning div#subjects h2 {
   font-size: 1.7rem;
   padding-left: 1rem;
+}
+@media only screen and (max-width:700px){
+  div.learning img,
+  div.learning h3 {
+    display: none;
+  }
+  div.learning div#subjects h2{
+  padding: 1rem 0 1.5rem 1rem;
+  }
+  div.learning div#row1,
+  div.learning div#row2{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  div.learning div#row1 div,
+  div.learning div#row2 div{
+    width: 20rem;
+    margin-bottom: 0.5rem;
+    background-color: pink;
+    margin-left: 0;
+    padding: 0;
+  }
+  div.learning {
+    padding: 2rem 0;
+    border-top: 1px solid pink;
+  }
 }
 div.items{
   display: flex;
@@ -258,6 +309,25 @@ div.last h3 {
 .last div#video video{
   width: 100%;
 }
+@media only screen and (max-width:700px){
+  div.last div.stuff{
+    display: none;
+  }
+  div.last div#video{
+    width: 100%;
+    padding: 1rem 0 1.5rem 0;
+  }
+  div.last div#video h3,
+  div.last div#video p {
+    display: none;
+  }
+  div.last {
+    padding-top: 2rem;
+  }
+  div.last h2{
+    padding: 0;
+  }
+}
 footer {
   border-top: 1px solid gray;
   width: 100%;
@@ -274,4 +344,12 @@ footer div {
   padding-bottom: 1rem;
   color: gray;
   font-size: 0.9rem;
+}
+@media only screen and (max-width: 700px){
+  footer{
+border-top: none;
+  }
+  footer .right {
+    display: none;
+  }
 }

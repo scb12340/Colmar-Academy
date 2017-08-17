@@ -1,6 +1,6 @@
 html {
   font-size: 16px;
-  font-family: helvetica;
+  font-family: 'Nunito',sans-serif;
 }
 header div.desktop {
   background-color: white;
@@ -18,12 +18,13 @@ nav a {
   padding-left: 1rem;
 }
 nav {
+  padding-left: 20rem;
   display: block;
   text-align: right;
 }
 span h1:last-child {
-  color: gray;
-  opacity: 0.5;
+  color: teal;
+font-weight: lighter;
 }
 header div.mobile {
   display: none;
@@ -46,7 +47,7 @@ header div.mobile {
 div.banner {
   display: flex;
   flex-direction: row;
-  background-color: lightgray;
+  background-color: darkslategray;
   width: 100%;
   align-items: center;
 }
@@ -63,22 +64,30 @@ div.banner div#text {
 }
 div#text h1{
   font-weight: bold;
-  color: dimgray;
+  color: seashell;
   font-size: 3rem;
   width: 70%;
 }
 div#text h2 {
-  color: dimgray;
+  color: seashell;
   font-size: 1.5rem;
   width: 70%;
 }
 div.banner button {
-  background-color: dimgray;
+  background-color: lightgray;
   width: 68%;
+  border: 1px solid seashell;
+}
+div.banner button:hover{
+  background-color: darkgray;
+  transition-delay: 0.07s;
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
 }
 div.banner button h3 {
   padding: 0.5rem 0;
-  color: white;
+  color: darkslategray;
   font-size: 1.5rem;
   font-weight: lighter;
 }
@@ -96,6 +105,7 @@ div.banner button h3 {
     padding: 2rem 1rem;
     font-size:3rem;
     width: 100%;
+    color: white;
   }
   div#text h2 {
     padding-bottom: 1.5rem;
@@ -131,25 +141,30 @@ div.articles div.poster img{
   width: 100%;
 }
 div.articles div.poster p {
-  color: gray;
+  color: dimgray;
   font-size: 1.2rem;
 }
+div.articles div.poster h5{
+  color: darkslategray;
+}
 .articles div.school {
-  border-left: 1px solid gray;
+  border-left: 1px solid darkslategray;
   width: 40%;
   padding: 1rem 0;
 }
 .articles div.school div {
 display: flex;
 flex-direction: row;
+border-bottom: 1px solid black;
 }
 .articles div.school div#content {
   display: flex;
   flex-direction: column;
   width: 65%;
+  border-bottom: none;
 }
 .articles div.school a {
-  color: blue;
+  color: teal;
 }
 .articles div.school p {
   font-size: 1.2rem;
@@ -157,35 +172,58 @@ flex-direction: row;
   font-weight: lighter;
 }
 .articles div.school div#a3:last-child {
-  background-color: pink;
+  background-color: darkslategray;
+  color: seashell;
+  border-bottom: none;
+}
+.articles div.school div#a3 p{
+  color: seashell;
+}
+.articles div.school div#a3 a{
+  color: black;
+}
+
+div.articles div.school-mobile{
+  display: none;
 }
 @media only screen and (max-width: 700px){
+div.articles div.school-mobile {
+  width: 100%;
+  padding: 1rem;
+  display: block;
+  background-color: white;
+}
+div.articles div.school-mobile div {
+  display: block;
+  width: 100%;
+  padding-bottom: 2rem;
+}
   div.articles .poster{
     display:none;
   }
   div.articles div.school{
-    width: 100%;
-    padding: 1rem;
+    display: none;
   }
-  div.articles div.school div{
-    display: block;
-    width: 100%;
-    padding-bottom: 2rem;
-  }
-  .articles div.school div#content {
+  .articles div.school-mobile div#content {
     width: 100%;
   }
-  div.articles div.school img#image {
+  div.articles div.school-mobile img#image {
     width: 100%;
     height: 50%;
   }
 }
 div.learning {
-  background-color: gray;
+  background-color: white;
   text-align: center;
   font-weight: bold;
   font-size: 2rem;
   padding-top: 2rem;
+  color: seashell;
+  border-top: 1px solid darkslategray;
+  border-bottom: 1px solid darkslategray;
+}
+div.learning span{
+  color: black;
 }
 div.learning div#subjects {
   padding: 2rem 4.5rem;
@@ -196,7 +234,7 @@ div.learning div#row1{
   flex-direction: row;
 }
 div.learning div#row1 div{
-  background-color: white;
+  background-color: darkslategray;
   text-align: left;
   margin-right: 2rem;
   width: 33%;
@@ -207,7 +245,7 @@ display: flex;
 flex-direction: row;
 }
 div.learning div#row2 div {
-  background-color: white;
+  background-color: darkslategray;
   text-align: left;
   margin-right: 2rem;
   width: 33%;
@@ -217,6 +255,7 @@ div.learning div#row2 div {
 div.learning div#subjects h2 {
   font-size: 1.7rem;
   padding-left: 1rem;
+  border-bottom: 1px solid seashell;
 }
 @media only screen and (max-width:700px){
   div.learning img,
@@ -224,7 +263,7 @@ div.learning div#subjects h2 {
     display: none;
   }
   div.learning div#subjects h2{
-  padding: 1rem 0 1.5rem 1rem;
+    border-bottom: none;
   }
   div.learning div#row1,
   div.learning div#row2{
@@ -233,18 +272,20 @@ div.learning div#subjects h2 {
     padding-bottom: 0;
     margin-right: 0;
     width: 100%;
+    box-sizing: border-box;
   }
   div.learning div#row1 div,
   div.learning div#row2 div{
-    width: 20rem;
+    width: 100%;
     margin-bottom: 0.5rem;
-    background-color: pink;
+    background-color: darkslategray;
     margin-left: 0;
     padding: 0;
+    box-sizing: border-box;
   }
   div.learning {
     padding: 2rem 0;
-    border-top: 1px solid pink;
+    border-top: 1px solid darkslategray;
   }
 }
 div.items{
@@ -252,14 +293,15 @@ div.items{
   flex-direction: row;
 }
 div.learning div#subjects h3 {
-  color: dimgray;
+  color: seashell;
   font-weight: lighter;
   font-size: 1.2rem;
   padding-left: 1rem;
   padding-top: .5rem;
 }
 div.items div.stuff div:first-child{
-  background-color: pink;
+  background-color: darkslategray;
+  color: seashell;
 }
 div.learning img {
   height: auto;
@@ -279,6 +321,10 @@ div.last div.stuff img{
 }
 div.last div.stuff h3 {
   font-size: 1.7rem;
+}
+div.items div.stuff h4{
+  font-size: 1rem;
+  font-weight: lighter;
 }
 div.last div.stuff h5 {
   color: gray;
@@ -342,7 +388,7 @@ footer .left {
 footer div {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: gray;
+  color: darkslategray;
   font-size: 0.9rem;
 }
 @media only screen and (max-width: 700px){
